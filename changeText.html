@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1 class="h">Hello World</h1>
+    <button class="btn-change">Change text</button>
+
+    <script>
+      let heading = document.querySelector(".h");
+
+      let btn_change = document.querySelector(".btn-change");
+
+      btn_change.addEventListener("click", () => {
+        if (heading.innerHTML == "Hello World") {
+          heading.innerHTML = "Change World";
+        } else {
+          heading.innerHTML = "Hello World";
+        }
+      });
+    </script>
+  </body>
+</html>

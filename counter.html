@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Counter</title>
+
+  <style>
+    .counter-div{
+        /* border: 2px solid red; */
+        text-align: center;
+    }
+
+   
+
+
+  </style>
+  </head>
+  <body>
+
+    <div class="counter-div">
+
+        
+        <h1 class="number_count">0</h1>
+        <button class="btn-add">Add</button>
+        <button class="btn-reset">Reset</button>
+        <button class="btn-reverse">Decremnent</button>
+        
+    </div>
+
+    <script>
+        let number_count = document.querySelector('.number_count')
+        let btn_add = document.querySelector('.btn-add')
+        let btn_reset = document.querySelector('.btn-reset')
+        let btn_reverse = document.querySelector('.btn-reverse')
+
+        let count = 0
+
+        btn_add.addEventListener('click',()=>{
+
+
+            count = count + 1
+            number_count.innerText = count;
+            if(count > 0){
+                
+                number_count.style.color = 'green'
+            }
+        })
+
+        btn_reverse.addEventListener('click',()=>{
+              count = count - 1
+                
+              number_count.innerText = count;
+              if(count < 0)
+              {
+                number_count.style.color = 'red'
+
+            }
+
+           
+        })
+
+        btn_reset.addEventListener('click',()=>{
+
+                count = 0
+
+                
+
+            number_count.innerText = count
+            number_count.style.color = 'yellow'
+
+        })
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</html>

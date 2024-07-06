@@ -68,20 +68,105 @@
 
       // Functions
 
-      const MarkSheet = (name, rollno, cls, eng, comp, math) => {
-        let obtMarks = eng + comp + math;
-        let total = 300;
-        let Percentage = (obtMarks / total) * 100;
-        // console.log(Percentage.toFixed(2));
+      // const MarkSheet = (name, rollno, cls, eng, comp, math) => {
+      //   let obtMarks = eng + comp + math;
+      //   let total = 300;
+      //   let Percentage = (obtMarks / total) * 100;
+      //   // console.log(Percentage.toFixed(2));
 
-        if (Percentage >= 50) {
-          console.log(`Student passed with ${Percentage.toFixed(2)}`);
-        } else {
-          console.log(`Student failed with ${Percentage}`);
-        }
+      //   if (Percentage >= 50) {
+      //     console.log(`Student passed with ${Percentage.toFixed(2)}`);
+      //   } else {
+      //     console.log(`Student failed with ${Percentage}`);
+      //   }
+      // };
+
+      // Percentage Function Arrow
+
+      // const markSheet = (name, age, rollno, math, comp, urdu) => {
+      //   let obtain = math + comp + urdu;
+      //   let total = 300;
+      //   let percentage = (obtain / total) * 100;
+
+      //   console.log(percentage.toFixed(2));
+
+      //   if (percentage > 60) {
+      //     console.log(
+      //       `Your Grade is D and Your Percentage is ${percentage.toFixed(2)}`
+      //     );
+      //   }
+      // };
+
+      // markSheet("Ammaz", 20, 121, 50, 60, 80);
+
+      // for (let i = 0; i < myArr.length; i++) // myArr.length is 4   Because 4 element in array and length start with 1
+      //                                       // So codition check 0 < 4  1< 4 upto   4 < 4
+      // {
+
+      //   console.log(myArr[i]);
+      // }
+
+      // myArr.forEach((item, number) => {
+      //   console.log(item);
+      // });
+
+      //
+
+      // Linear Search function
+
+      // const LinearSearch = (myArr, target) => {
+      //   myArr.forEach((item, index) => {
+      //     if (item == target) {
+      //       console.log(`Target Found at Index : ${index}`);
+      //     }
+      //   });
+      // };
+
+      // LinearSearch([10, 20, 30], 30);
+
+      // Object
+
+      const person = {
+        friends: [
+          {
+            name: "Ammaz",
+            Age: 50,
+          },
+
+          {
+            name: "Ahmed",
+            Age: 50,
+          },
+        ],
       };
 
-      MarkSheet("Ammaz", 12, "10th", 78, 90, 55);
+      person.friends.forEach((item, index) => {
+        console.log(item.name);
+      });
+
+      // Whatsapp Status
+
+      const watsApp = {
+        status: [
+          {
+            images:
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhOt8yVPy6GGZ4tjCXHpImPPqpNoEwJGeE2Q&s",
+            name: "Ammaz",
+            caption: "First Status",
+          },
+
+          {
+            images:
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhOt8yVPy6GGZ4tjCXHpImPPqpNoEwJGeE2Q&s",
+            name: "Ahmed",
+            caption: "Second Status",
+          },
+        ],
+      };
+
+      watsApp.status.forEach((item, index) => {
+        console.log(item.images, item.name, item.caption);
+      });
     </script>
   </body>
 </html>
